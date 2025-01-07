@@ -5,6 +5,7 @@ import com.bytedance.douyinclouddemo.model.TextAntidirt;
 import com.bytedance.douyinclouddemo.model.TextAntidirtRequest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import config_java.config_get;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -45,4 +46,23 @@ public class HelloController {
         response.success(responseBody);
         return response;
     }
+
+    @PostMapping("/api/config/get")
+      public JsonResponse configure()  {
+        JsonResponse response = new JsonResponse();
+        try {
+            String keyValue = config_get.configure();
+            if (keyValue!= null) {
+                // 在这里可以根据获取到的keyValue做进一步处理
+                // 例如设置response的成功数据
+                response.success(keyValue);
+            } else {
+                response.failure("Failed to get key from config center");
+            }
+        } catch (Exception e) {
+            response.failure(e.getMessage());
+        }
+        return response;
+    }
+
 }
