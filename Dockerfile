@@ -11,7 +11,6 @@ RUN mvn -s /opt/application/settings.xml -f /opt/application/pom.xml clean packa
 # 将构建产物jar包拷贝到运行时目录中
 RUN chmod -R 777 /opt/application/run.sh
 
-RUN echo "100.68.97.246 config-center.dyc.ivolces.com" >> /etc/hosts
 
 EXPOSE 8000
 
