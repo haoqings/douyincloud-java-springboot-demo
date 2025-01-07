@@ -67,7 +67,7 @@
         <repository>
             <id>douyincloud</id>
             <name>douyincloud</name>
-            <url>https://artifacts-cn-beijing.volces.com/repository/douyincloud-test/org/bytedance/douyincloud/configcenter/</url>
+            <url>https://artifacts-cn-beijing.volces.com/repository/douyincloud-test/</url>
         </repository>
     </repositories>
 

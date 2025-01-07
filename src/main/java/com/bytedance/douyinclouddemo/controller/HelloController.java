@@ -54,8 +54,6 @@ public class HelloController {
         try {
             String keyValue = config_get.configure();
             if (keyValue!= null) {
-                // 在这里可以根据获取到的keyValue做进一步处理
-                // 例如设置response的成功数据
                 response.success(keyValue);
             } else {
                 response.failure("Failed to get key from config center");
