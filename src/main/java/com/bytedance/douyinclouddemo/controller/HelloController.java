@@ -47,6 +47,7 @@ public class HelloController {
         return response;
     }
 
+
     @PostMapping("/api/config/get")
       public JsonResponse configure()  {
         JsonResponse response = new JsonResponse();
