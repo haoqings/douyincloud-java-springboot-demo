@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.bytedance.douyincloud</groupId>
             <artifactId>configcenter</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
 
 
@@ -42,10 +42,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -65,7 +67,7 @@
         <repository>
             <id>douyincloud</id>
             <name>douyincloud</name>
-            <url>https://artifacts-cn-beijing.volces.com/repository/douyincloud/</url>
+            <url>https://artifacts-cn-beijing.volces.com/repository/douyincloud-test/org/bytedance/douyincloud/configcenter/</url>
         </repository>
     </repositories>
 
