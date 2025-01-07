@@ -160,7 +160,7 @@ under the License.
             <id>sjtugmaven</id>
             <mirrorOf>central</mirrorOf>
             <name>sjtug maven</name>
-            <url>https://maven.aliyun.com/repository/public/</url>
+            <url>https://mirrors.cloud.tencent.com/nexus/repository/maven-public/</url>
         </mirror>
 
     </mirrors>
