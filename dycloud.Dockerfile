@@ -1,0 +1,14 @@
+# 基础镜像，按需替换java版本镜像
+FROM public-cn-beijing.cr.volces.com/public/base:maven-3.6.0-jdk-8-slim
+# 环境变量,从云端dev环境拉取,需要手动填充密码等相关信息
+ENV MONGO_USERNAME=root
+ENV MONGO_PASSWORD=请自行输入对应密码信息
+ENV MONGO_ADDRESS=dycloud-local-proxy:3717
+ENV REDIS_ADDRESS=dycloud-local-proxy:6379
+ENV MYSQL_PASSWORD=请自行输入对应密码信息
+ENV MYSQL_ADDRESS=dycloud-local-proxy:3306
+ENV REDIS_USERNAME=default
+ENV REDIS_PASSWORD=请自行输入对应密码信息
+ENV MYSQL_USERNAME=temp
+ENV SERVICE_ID=1kmhq5kpk42zq
+ENV CLOUD_ENV=DEV
